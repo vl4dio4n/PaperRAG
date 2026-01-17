@@ -1,0 +1,829 @@
+Classical search for: 'What specific artifact does the standard Isolation Forest produce in anomaly score heat maps that Extended Isolation Forest aims to fix?'
+Query tokens: ['specific', 'artifact', 'standard', 'isolation', 'forest', 'produce', 'anomaly', 'score', 'heat', 'map', 'extend', 'isolation', 'forest', 'aim', 'fix']
+--- Result 1 (BM25 Score: 26.75) ---
+Source: [Extended Isolation Forest, Hariri et al., 2021]
+File: ad-papers-pdf/extended_isolation_forest.pdf (Page 2)
+Content: various metrics, and while the problem of the isolation for-
+est discussed here is remedied because of the fundamen-
+tally different nature of achieving isolation, a discussion of
+what the causes of the problem with Isolation Forest is miss-
+ing. Here we show one can achieve better performance by
+ad...
+
+--- Result 2 (BM25 Score: 24.17) ---
+Source: [Extended Isolation Forest, Hariri et al., 2021]
+File: ad-papers-pdf/extended_isolation_forest.pdf (Page 1)
+Content: Extended Isolation Forest
+Sahand Hariri
+, Matias Carrasco Kind
+, and Robert J. Brunner
+Abstract—We present an extension to the model-free anomaly detection algorithm, Isolation Forest. This extension, named Extended
+Isolation Forest (EIF), resolves issues with assignment of anomaly score to given da...
+
+--- Result 3 (BM25 Score: 22.25) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 1)
+Content: Extended K-Means Isolation Forest: A Hybrid Approach Combining
+Random Projections and Clustering for Anomaly Detection
+Vlad-Ioan Bîrsan
+Computer Science Department, University of Bucharest, Romania
+Abstract
+Unsupervised anomaly detection is a fundamental prob-
+lem in data mining, with applications s...
+
+
+
+Classical search for: 'How does Extended Isolation Forest fix the bias issues found in the standard algorithm?'
+Query tokens: ['extend', 'isolation', 'forest', 'fix', 'bias', 'issue', 'find', 'standard', 'algorithm']
+--- Result 1 (BM25 Score: 12.96) ---
+Source: [Extended Isolation Forest, Hariri et al., 2021]
+File: ad-papers-pdf/extended_isolation_forest.pdf (Page 10)
+Content: described before. Fig. 19 shows the convergence plots for the
+standard, rotated and Extended Isolation forest.
+Figs. 20 and 21 show the same plots for the 3-D blob and
+4-D blobs respectively, except for the Rotated Isolation For-
+est case.
+For the convergence plots, the error bars show the
+variance ...
+
+--- Result 2 (BM25 Score: 12.18) ---
+Source: [Extended Isolation Forest, Hariri et al., 2021]
+File: ad-papers-pdf/extended_isolation_forest.pdf (Page 1)
+Content: Extended Isolation Forest
+Sahand Hariri
+, Matias Carrasco Kind
+, and Robert J. Brunner
+Abstract—We present an extension to the model-free anomaly detection algorithm, Isolation Forest. This extension, named Extended
+Isolation Forest (EIF), resolves issues with assignment of anomaly score to given da...
+
+--- Result 3 (BM25 Score: 11.18) ---
+Source: [Extended Isolation Forest, Hariri et al., 2021]
+File: ad-papers-pdf/extended_isolation_forest.pdf (Page 5)
+Content: branches. This approach does indeed improve the perfor-
+mance quite a bit as we will see in the results section.
+With this method, in each case, the same bias exists as
+before, but only for single trees. Each tree carries with itself
+a different bias. When the aggregate score is computed, the
+total ...
+
+
+
+Classical search for: 'How does Functional Isolation Forest (FIF) project data using a dictionary and scalar products?'
+Query tokens: ['functional', 'isolation', 'forest', 'fif', 'project', 'data', 'use', 'dictionary', 'scalar', 'products']
+--- Result 1 (BM25 Score: 26.14) ---
+Source: [Functional Isolation Forest, Staerman, 2019]
+File: ad-papers-pdf/functional_isolation_forest.pdf (Page 14)
+Content: Staerman Mozharovskyi Cl´emenc¸on d’Alch´e-Buc
+5. Extensions of FIF
+Extension to multivariate functions FIF can be easily extended to the multivariate
+functional data, i.e. when the quantity of interest lies in Rd for each moment of time. For
+this, the coordinate-wise sum of the d corresponding scal...
+
+--- Result 2 (BM25 Score: 24.86) ---
+Source: [Functional Isolation Forest, Staerman, 2019]
+File: ad-papers-pdf/functional_isolation_forest.pdf (Page 32)
+Content: Staerman Mozharovskyi Cl´emenc¸on d’Alch´e-Buc
+F. Multivariate Functional Isolation Forest and depth mapping
+0
+20
+40
+60
+80
+100
+Index of sorted curves
+0.40
+0.45
+0.50
+0.55
+0.60
+0.65
+Score
+Threshold
+x
+0.2
+0.4
+0.6
+0.8
+1.0
+y
+0.2 0.4 0.6 0.8
+Time
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Figure 19: FIF anomaly scores for a...
+
+--- Result 3 (BM25 Score: 20.52) ---
+Source: [Functional Isolation Forest, Staerman, 2019]
+File: ad-papers-pdf/functional_isolation_forest.pdf (Page 8)
+Content: Staerman Mozharovskyi Cl´emenc¸on d’Alch´e-Buc
+the observation of a well known device and thus can beneﬁt from expert knowledge.
+Sampling a Split variable Once a dictionary is chosen, a probability distribution ν on
+D is deﬁned to draw a Split variable d. Note that the choice of the sampling distrib...
+
+
+
+Classical search for: 'Why are anomalies assumed to be more susceptible to isolation in the kernel space according to the Kernel Isolation Forest paper?'
+Query tokens: ['anomalies', 'assume', 'susceptible', 'isolation', 'kernel', 'space', 'accord', 'kernel', 'isolation', 'forest', 'paper']
+--- Result 1 (BM25 Score: 18.45) ---
+Source: [Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019]
+File: ad-papers-pdf/kernel_isolation_forest.pdf (Page 1)
+Content: This article has been accepted for inclusion in a future issue of this journal. Content is final as presented, with the exception of pagination.
+IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING
+1
+Hyperspectral Anomaly Detection
+With Kernel Isolation Forest
+Shutao Li
+, Fellow, IEEE, Kunzhong Zhang,...
+
+--- Result 2 (BM25 Score: 16.24) ---
+Source: [Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019]
+File: ad-papers-pdf/kernel_isolation_forest.pdf (Page 3)
+Content: This article has been accepted for inclusion in a future issue of this journal. Content is final as presented, with the exception of pagination.
+LI et al.: HYPERSPECTRAL ANOMALY DETECTION WITH KERNEL IFOREST
+3
+researched in remote sensing applications. In this article,
+we develop an iForest method t...
+
+--- Result 3 (BM25 Score: 15.68) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 1)
+Content: Extended K-Means Isolation Forest: A Hybrid Approach Combining
+Random Projections and Clustering for Anomaly Detection
+Vlad-Ioan Bîrsan
+Computer Science Department, University of Bucharest, Romania
+Abstract
+Unsupervised anomaly detection is a fundamental prob-
+lem in data mining, with applications s...
+
+
+
+Classical search for: 'How does Generalized Isolation Forest (GIF) improve upon Extended Isolation Forest regarding empty branches?'
+Query tokens: ['generalize', 'isolation', 'forest', 'gif', 'improve', 'upon', 'extend', 'isolation', 'forest', 'regard', 'empty', 'branch']
+--- Result 1 (BM25 Score: 22.75) ---
+Source: [Generalized isolation forest for anomaly detection, Lesouple et al., 2021]
+File: ad-papers-pdf/generalized_isolation_forest.pdf (Page 1)
+Content: Graphical Abstract (Optional)
+To create your abstract, please type over the instructions in the template box below. Fonts or abstract dimensions should not be
+changed or altered.
+Generalized Isolation Forest for Anomaly Detec-
+tion
+Julien Lesouple, C´edric Baudoin, Marc Spigai and
+Jean-Yves Tournere...
+
+--- Result 2 (BM25 Score: 22.38) ---
+Source: [Generalized isolation forest for anomaly detection, Lesouple et al., 2021]
+File: ad-papers-pdf/generalized_isolation_forest.pdf (Page 2)
+Content: 1
+Pattern Recognition Letters
+journal homepage: www.elsevier.com
+Generalized Isolation Forest for Anomaly Detection
+Julien Lesouplea,∗∗, C´edric Baudoinb, Marc Spigaib, Jean-Yves Tournereta,c
+aT´eSA, 7 Boulevard de la Gare, 31000 Toulouse, France
+bThales Alenia Space, 26 Avenue Jean-Fran¸cois Champo...
+
+--- Result 3 (BM25 Score: 20.49) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 3)
+Content: Figure 1: Anomaly detection score maps across different algorithms and synthetic datasets.
+the axes, the anomaly score remains low, incorrectly indi-
+cating "normal regions." This phenomenon, first identified
+by Hariri et al. in
+[1], occurs because Standard IF em-
+ploys orthogonal hyperplanes parall...
+
+
+
+Classical search for: 'How does the K-Means Isolation Forest algorithm combine the partition strategy with the K-Means clustering algorithm?'
+Query tokens: ['kmeans', 'isolation', 'forest', 'algorithm', 'combine', 'partition', 'strategy', 'kmeans', 'cluster', 'algorithm']
+--- Result 1 (BM25 Score: 22.77) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 1)
+Content: Extended K-Means Isolation Forest: A Hybrid Approach Combining
+Random Projections and Clustering for Anomaly Detection
+Vlad-Ioan Bîrsan
+Computer Science Department, University of Bucharest, Romania
+Abstract
+Unsupervised anomaly detection is a fundamental prob-
+lem in data mining, with applications s...
+
+--- Result 2 (BM25 Score: 18.76) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 4)
+Content: Algorithm 2: Create Isolation Tree
+Data: X - data points, l - max. height,
+lvl - current height
+Result: iTree - a node in the isolation tree
+1 Function createITree(X, l, lvl)
+2
+if |X| ≤1 or lvl = l then
+3
+return ITree{size ←|X|}
+4
+draw q ∼U(0, 1)
+5
+q ←⌊d · q⌋
+6
+pmin ←min
+x∈X x(q)
+7
+pmax ←max
+x∈X x(q...
+
+--- Result 3 (BM25 Score: 18.02) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 5)
+Content: Algorithm 4: Create Extended ITree
+Data: X - data points, l - max. height,
+lvl - current height
+Result: iTree - a node in the isolation tree
+1 Function createITree(X, l, lvl)
+2
+if |X| ≤1 or lvl = l then
+3
+return iTree{size ←|X|}
+4
+draw u ∼N(0, Id)
+5
+w ←
+u
+∥u∥2
+6
+pmin ←min X, pmin ∈Rd
+7
+pmax ←max X, ...
+
+
+
+Classical search for: 'What are the two hybrid algorithms introduced in the Extended K-Means Isolation Forest paper?'
+Query tokens: ['two', 'hybrid', 'algorithms', 'introduce', 'extend', 'kmeans', 'isolation', 'forest', 'paper']
+--- Result 1 (BM25 Score: 20.25) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 1)
+Content: Extended K-Means Isolation Forest: A Hybrid Approach Combining
+Random Projections and Clustering for Anomaly Detection
+Vlad-Ioan Bîrsan
+Computer Science Department, University of Bucharest, Romania
+Abstract
+Unsupervised anomaly detection is a fundamental prob-
+lem in data mining, with applications s...
+
+--- Result 2 (BM25 Score: 12.33) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 8)
+Content: Figure 3: Comparative analysis of PR-AUC performance
+across ODDS benchmark datasets. The plot displays the
+mean PR-AUC scores obtained by Standard IF, EIF, GIF,
+K-Means IF, and the proposed Subspace and Extended
+K-Means IF variants. Error bars represent the 95% confi-
+dence intervals derived from 50...
+
+--- Result 3 (BM25 Score: 11.32) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 5)
+Content: Algorithm 4: Create Extended ITree
+Data: X - data points, l - max. height,
+lvl - current height
+Result: iTree - a node in the isolation tree
+1 Function createITree(X, l, lvl)
+2
+if |X| ≤1 or lvl = l then
+3
+return iTree{size ←|X|}
+4
+draw u ∼N(0, Id)
+5
+w ←
+u
+∥u∥2
+6
+pmin ←min X, pmin ∈Rd
+7
+pmax ←max X, ...
+
+
+
+Classical search for: 'How does the Probabilistic Generalization of Isolation Forest (PGIF) use segment-cumulated probability?'
+Query tokens: ['probabilistic', 'generalization', 'isolation', 'forest', 'pgif', 'use', 'segmentcumulated', 'probability']
+--- Result 1 (BM25 Score: 21.86) ---
+Source: [A probabilistic generalization of isolation forest, Tokovarov,, 2022]
+File: ad-papers-pdf/probabilistic_generalization_of_isolation_forest.pdf (Page 1)
+Content: A probabilistic generalization of isolation forest
+Mikhail Tokovarov ⇑, Paweł Karczmarek
+Department of Computer Science, Lublin University of Technology, ul. Nadbystrzycka 36B, 20-618 Lublin, Poland
+a r t i c l e
+i n f o
+Article history:
+Received 7 May 2021
+Received in revised form 27 October 2021
+A...
+
+--- Result 2 (BM25 Score: 15.73) ---
+Source: [A probabilistic generalization of isolation forest, Tokovarov,, 2022]
+File: ad-papers-pdf/probabilistic_generalization_of_isolation_forest.pdf (Page 15)
+Content: are isolated at high levels of the tree, so that the tree is formed in rather linear structure, producing lower number of nodes.
+Lower number of nodes leads to less number of time-consuming operations of split value generation. This situation is shown
+in Fig. 8. The ﬁgure can be interpreted in such ...
+
+--- Result 3 (BM25 Score: 15.40) ---
+Source: [A probabilistic generalization of isolation forest, Tokovarov,, 2022]
+File: ad-papers-pdf/probabilistic_generalization_of_isolation_forest.pdf (Page 13)
+Content: 4.4. Experiments on real datasets: U-shaped probability density
+Table 3 shows the results of applying U-shaped probability density function. Interestingly, this solution allowed achieving
+higher result in case of Annthyroid and Ionosphere datasets.
+4.5. Comparison with selected methods of outlier de...
+
+
+
+Classical search for: 'How does the Rényi divergence relate to the aggregation functions in distribution-based scoring for Isolation Forests?'
+Query tokens: ['rényi', 'divergence', 'relate', 'aggregation', 'function', 'distributionbased', 'score', 'isolation', 'forest']
+--- Result 1 (BM25 Score: 16.50) ---
+Source: [Distribution and volume based scoring for Isolation Forests, Dhouib et al., 2023]
+File: ad-papers-pdf/scoring_isolation_forest.pdf (Page 6)
+Content: [13] Tom´aˇs Pevn´y. Loda: Lightweight on-line detector of anomalies. Machine
+Learning, 102(2):275–304, 2016.
+[14] Alfr´ed R´enyi. On measures of entropy and information. In Proceedings
+of the Fourth Berkeley Symposium on Mathematical Statistics and Prob-
+ability, Volume 1: Contributions to the Theo...
+
+--- Result 2 (BM25 Score: 15.89) ---
+Source: [Distribution and volume based scoring for Isolation Forests, Dhouib et al., 2023]
+File: ad-papers-pdf/scoring_isolation_forest.pdf (Page 2)
+Content: points are more evenly distributed than under the logarithmic
+scaling of ϕIF. In terms of the above tuple notation, IF is then
+specified as
+IF ≡(n, AIF, ϕIF, hIF, τ),
+where we leave the specification of n and τ implicit.
+A. Contributions
+In this paper, we contribute two logically independent
+variant...
+
+--- Result 3 (BM25 Score: 13.87) ---
+Source: [Distribution and volume based scoring for Isolation Forests, Dhouib et al., 2023]
+File: ad-papers-pdf/scoring_isolation_forest.pdf (Page 3)
+Content: not lead to a robust classifier and more often than not “throw
+away the baby with the bath water”. Instead, in this paper, we
+introduce a family of aggregation functions, parametrized by
+a single parameter α, that lets users “tune” the sensitivity of
+the aggregation step to estimators with below-ave...
+
+
+
+Classical search for: 'According to the 'Revisiting randomized choices' paper, how does non-uniform random splitting affect the detection of clustered outliers?'
+Query tokens: ['accord', 'revisit', 'randomize', 'choices', 'paper', 'nonuniform', 'random', 'split', 'affect', 'detection', 'cluster', 'outliers']
+--- Result 1 (BM25 Score: 21.70) ---
+Source: [Revisiting randomized choices in isolation forests, Cortes et al., 2021]
+File: ad-papers-pdf/randomised_choices_in_isolation_forest.pdf (Page 1)
+Content: arXiv:2110.13402v3  [stat.ML]  6 Dec 2021
+Revisiting randomized choices in isolation forests
+David Cortes
+December 7, 2021
+Abstract
+Isolation forest or ”iForest” is an intuitive and widely used algorithm for anomaly
+detection that follows a simple yet eﬀective idea: in a given data distribution, if
+...
+
+--- Result 2 (BM25 Score: 11.55) ---
+Source: [Revisiting randomized choices in isolation forests, Cortes et al., 2021]
+File: ad-papers-pdf/randomised_choices_in_isolation_forest.pdf (Page 8)
+Content: Figure 4: Anomaly scores from DET in randomly-generated bimodal data.
+Unfortunately, it also tends to produce little discrimination in scores among non-
+extreme values, perhaps even less so than SCiForest.
+A logical thought to remedy
+this issue would be to employ a ”forest” of DETs with sub-sampled ...
+
+--- Result 3 (BM25 Score: 9.24) ---
+Source: [Revisiting randomized choices in isolation forests, Cortes et al., 2021]
+File: ad-papers-pdf/randomised_choices_in_isolation_forest.pdf (Page 7)
+Content: Perhaps counterintuitively, the splits generated following this criterion seem to be less
+sensitive to the presence of local outliers in the training data compared to uniformly-
+random choices:
+Figure 3: Inﬂuence of an outlier in the splits generated through diﬀerent guiding criteria
+In this particu...
+
+
+
+Classical search for: 'What is the specific application domain (type of images) that the Kernel Isolation Forest is designed to analyze?'
+Query tokens: ['specific', 'application', 'domain', 'type', 'image', 'kernel', 'isolation', 'forest', 'design', 'analyze']
+--- Result 1 (BM25 Score: 14.98) ---
+Source: [K-means-based isolation forest, Karczmarek et al., 2020]
+File: ad-papers-pdf/kmeans_isolation_forest.pdf (Page 1)
+Content: Knowledge-Based Systems 195 (2020) 105659
+Contents lists available at ScienceDirect
+Knowledge-Based Systems
+journal homepage: www.elsevier.com/locate/knosys
+K-Means-based isolation forest✩
+Paweł Karczmarek a,∗, Adam Kiersztyn a, Witold Pedrycz b,c,d, Ebru Al e
+a Department of Computer Science, Lubli...
+
+--- Result 2 (BM25 Score: 11.95) ---
+Source: [Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019]
+File: ad-papers-pdf/kernel_isolation_forest.pdf (Page 1)
+Content: This article has been accepted for inclusion in a future issue of this journal. Content is final as presented, with the exception of pagination.
+IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING
+1
+Hyperspectral Anomaly Detection
+With Kernel Isolation Forest
+Shutao Li
+, Fellow, IEEE, Kunzhong Zhang,...
+
+--- Result 3 (BM25 Score: 11.64) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 9)
+Content: specific trade-off between speed and geometric sensitivity
+required by the application; Standard IF, EIF and GIF
+remain ideal for efficiency, while K-Means IF and our hy-
+brid approaches are superior for detecting anomalies in
+complex manifolds.
+References
+[1] Sahand Hariri, Matias Carrasco Kind, an...
+
+
+
+Classical search for: 'Which benchmark metrics were used to evaluate the Extended K-Means Isolation Forest on the 13 datasets?'
+Query tokens: ['benchmark', 'metrics', 'use', 'evaluate', 'extend', 'kmeans', 'isolation', 'forest', '13', 'datasets']
+--- Result 1 (BM25 Score: 17.28) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 7)
+Content: Algorithm 9: Compute Anomaly Score K-Means
+IF
+Data: x - data point,
+iTree - K-Means isolation tree,
+lvl - height of current node,
+l - max. height
+Result: score - anomaly score of data point
+1 Function score(x, iTree, lvl, l)
+2
+if iTree.size ≤1 or lvl = 1 then
+3
+return 0
+4
+child_nodes ←iTree.children...
+
+--- Result 2 (BM25 Score: 16.50) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 1)
+Content: Extended K-Means Isolation Forest: A Hybrid Approach Combining
+Random Projections and Clustering for Anomaly Detection
+Vlad-Ioan Bîrsan
+Computer Science Department, University of Bucharest, Romania
+Abstract
+Unsupervised anomaly detection is a fundamental prob-
+lem in data mining, with applications s...
+
+--- Result 3 (BM25 Score: 13.49) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 8)
+Content: Figure 3: Comparative analysis of PR-AUC performance
+across ODDS benchmark datasets. The plot displays the
+mean PR-AUC scores obtained by Standard IF, EIF, GIF,
+K-Means IF, and the proposed Subspace and Extended
+K-Means IF variants. Error bars represent the 95% confi-
+dence intervals derived from 50...
+
+
+
+Classical search for: 'What is the 'visual elbow rule' used for in the context of Functional Isolation Forest experiments?'
+Query tokens: ['visual', 'elbow', 'rule', 'use', 'context', 'functional', 'isolation', 'forest', 'experiment']
+--- Result 1 (BM25 Score: 21.45) ---
+Source: [Functional Isolation Forest, Staerman, 2019]
+File: ad-papers-pdf/functional_isolation_forest.pdf (Page 33)
+Content: Functional Isolation Forest
+by taking 100 curves from class 7 and adding 10 observations from class 2. We apply FIF
+with two-dimensional sinuscosine dictionary and the following scalar product : ⟨f, g⟩(L2)⊗d.
+sinuscosine is constructed as a direct extension of cosine dictionary introduced for FIF by...
+
+--- Result 2 (BM25 Score: 12.77) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 6)
+Content: Algorithm 6: Create Generalized ITree
+Data: X - data points, l - max. height,
+lvl - current height
+Result: iTree - a node in the isolation tree
+1 Function createITree(X, l, lvl)
+2
+if |X| ≤1 or lvl = l then
+3
+return iTree{size ←|X|}
+4
+draw u ∼N(0, Id)
+5
+w ←
+u
+∥u∥2
+6
+pmin ←min{xT · w | x ∈X}
+7
+pmax ←m...
+
+--- Result 3 (BM25 Score: 12.12) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 5)
+Content: Algorithm 4: Create Extended ITree
+Data: X - data points, l - max. height,
+lvl - current height
+Result: iTree - a node in the isolation tree
+1 Function createITree(X, l, lvl)
+2
+if |X| ≤1 or lvl = l then
+3
+return iTree{size ←|X|}
+4
+draw u ∼N(0, Id)
+5
+w ←
+u
+∥u∥2
+6
+pmin ←min X, pmin ∈Rd
+7
+pmax ←max X, ...
+
+
+
+Classical search for: 'What is the main advantage of Generalized Isolation Forest (GIF) over Extended Isolation Forest (EIF) in terms of computation time?'
+Query tokens: ['main', 'advantage', 'generalize', 'isolation', 'forest', 'gif', 'extend', 'isolation', 'forest', 'eif', 'term', 'computation', 'time']
+--- Result 1 (BM25 Score: 24.80) ---
+Source: [Generalized isolation forest for anomaly detection, Lesouple et al., 2021]
+File: ad-papers-pdf/generalized_isolation_forest.pdf (Page 1)
+Content: Graphical Abstract (Optional)
+To create your abstract, please type over the instructions in the template box below. Fonts or abstract dimensions should not be
+changed or altered.
+Generalized Isolation Forest for Anomaly Detec-
+tion
+Julien Lesouple, C´edric Baudoin, Marc Spigai and
+Jean-Yves Tournere...
+
+--- Result 2 (BM25 Score: 21.41) ---
+Source: [Generalized isolation forest for anomaly detection, Lesouple et al., 2021]
+File: ad-papers-pdf/generalized_isolation_forest.pdf (Page 7)
+Content: 6
+0
+1
+2
+3
+4
+5
+6
+7
+8
+Forest creation time [s]
+’Pen Local’
+’Forest Cover’
+’Speech’
+’Shuttle’
+’Mammography’
+’Breast Cancer’
+’Aloi’
+’ANN Thyroid’
+’Letter’
+’Cardio’
+’Pen Global’
+’Satellite’
+’Ionosphere’
+Extended
+Generalized
+Fig. 8: Comparison of EIF and GIF computation times for several datasets (a
+line ...
+
+--- Result 3 (BM25 Score: 19.97) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 1)
+Content: Extended K-Means Isolation Forest: A Hybrid Approach Combining
+Random Projections and Clustering for Anomaly Detection
+Vlad-Ioan Bîrsan
+Computer Science Department, University of Bucharest, Romania
+Abstract
+Unsupervised anomaly detection is a fundamental prob-
+lem in data mining, with applications s...
+
+
+
+Classical search for: 'How does the performance of Isolation Forest compare to an LSTM-based Autoencoder on time-series data?'
+Query tokens: ['performance', 'isolation', 'forest', 'compare', 'lstmbased', 'autoencoder', 'timeseries', 'data']
+--- Result 1 (BM25 Score: 11.44) ---
+Source: [Generalized isolation forest for anomaly detection, Lesouple et al., 2021]
+File: ad-papers-pdf/generalized_isolation_forest.pdf (Page 2)
+Content: 1
+Pattern Recognition Letters
+journal homepage: www.elsevier.com
+Generalized Isolation Forest for Anomaly Detection
+Julien Lesouplea,∗∗, C´edric Baudoinb, Marc Spigaib, Jean-Yves Tournereta,c
+aT´eSA, 7 Boulevard de la Gare, 31000 Toulouse, France
+bThales Alenia Space, 26 Avenue Jean-Fran¸cois Champo...
+
+--- Result 2 (BM25 Score: 9.68) ---
+Source: [Revisiting randomized choices in isolation forests, Cortes et al., 2021]
+File: ad-papers-pdf/randomised_choices_in_isolation_forest.pdf (Page 10)
+Content: If the best possible pooled gain from a split point is evaluated across diﬀerent variables,
+those in which clusters are more easily formed or in which separations are more clear will
+result in a higher gain, perhaps making it also a potential heuristic for variable selection.
+In a way, pooled gain a...
+
+--- Result 3 (BM25 Score: 8.41) ---
+Source: [K-means-based isolation forest, Karczmarek et al., 2020]
+File: ad-papers-pdf/kmeans_isolation_forest.pdf (Page 3)
+Content: P. Karczmarek, A. Kiersztyn, W. Pedrycz et al. / Knowledge-Based Systems 195 (2020) 105659
+3
+Fig. 4. Points isolated by k-Means-based IF but not isolated when using isolation forest.
+is worth to stress that despite the fact that the anomaly detection
+constitutes an intensive area of applications, we...
+
+
+
+Classical search for: 'What are the specific latency requirements for deploying Isolation Forest on an Arduino or edge device?'
+Query tokens: ['specific', 'latency', 'requirements', 'deploy', 'isolation', 'forest', 'arduino', 'edge', 'device']
+--- Result 1 (BM25 Score: 9.35) ---
+Source: [Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019]
+File: ad-papers-pdf/kernel_isolation_forest.pdf (Page 3)
+Content: This article has been accepted for inclusion in a future issue of this journal. Content is final as presented, with the exception of pagination.
+LI et al.: HYPERSPECTRAL ANOMALY DETECTION WITH KERNEL IFOREST
+3
+researched in remote sensing applications. In this article,
+we develop an iForest method t...
+
+--- Result 2 (BM25 Score: 9.18) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 2)
+Content: Section 3 introduces our novel variations: Subspace K-
+Means IF and Extended K-Means IF. Section 4 presents
+the experiments and results, evaluating all six methods
+on 13 benchmark datasets, as well as on a sum of syn-
+thetic datasets generated from various distributions. Fi-
+nally, Section 5 offers ...
+
+--- Result 3 (BM25 Score: 8.62) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 9)
+Content: specific trade-off between speed and geometric sensitivity
+required by the application; Standard IF, EIF and GIF
+remain ideal for efficiency, while K-Means IF and our hy-
+brid approaches are superior for detecting anomalies in
+complex manifolds.
+References
+[1] Sahand Hariri, Matias Carrasco Kind, an...
+
+
+
+Classical search for: 'How can I implement the Isolation Forest algorithm using the H2O.ai library in R?'
+Query tokens: ['implement', 'isolation', 'forest', 'algorithm', 'use', 'h2oai', 'library', 'r']
+--- Result 1 (BM25 Score: 9.69) ---
+Source: [Extended Isolation Forest, Hariri et al., 2021]
+File: ad-papers-pdf/extended_isolation_forest.pdf (Page 11)
+Content: benchmark data. The EIF performed consistently better than
+the standard Isolation Forest in all cases considered.
+The results of this extension are more reliable and robust
+anomaly scores, and in some cases more accurate detection
+of structure of a given dataset. We additionally saw these
+results ca...
+
+--- Result 2 (BM25 Score: 9.55) ---
+Source: [K-means-based isolation forest, Karczmarek et al., 2020]
+File: ad-papers-pdf/kmeans_isolation_forest.pdf (Page 5)
+Content: P. Karczmarek, A. Kiersztyn, W. Pedrycz et al. / Knowledge-Based Systems 195 (2020) 105659
+5
+Fig. 6. Plots for the dataset with 50,000 elements. (a) Results obtained with isolation forest. (b) k-Means-based isolation forest. (c) IF results ranked from the less
+(blue) to the most (red) isolated one. ...
+
+--- Result 3 (BM25 Score: 8.25) ---
+Source: [Extended K-Means Isolation Forest, Vlad Birsan, 2025]
+File: ad-papers-pdf/extended_kmeans_isolation_forest.pdf (Page 5)
+Content: Algorithm 4: Create Extended ITree
+Data: X - data points, l - max. height,
+lvl - current height
+Result: iTree - a node in the isolation tree
+1 Function createITree(X, l, lvl)
+2
+if |X| ≤1 or lvl = l then
+3
+return iTree{size ←|X|}
+4
+draw u ∼N(0, Id)
+5
+w ←
+u
+∥u∥2
+6
+pmin ←min X, pmin ∈Rd
+7
+pmax ←max X, ...
+
+
+
+Classical search for: 'Does the 'Deep Isolation Forest' variant use Convolutional Neural Networks for feature extraction?'
+Query tokens: ['deep', 'isolation', 'forest', 'variant', 'use', 'convolutional', 'neural', 'network', 'feature', 'extraction']
+--- Result 1 (BM25 Score: 17.66) ---
+Source: [Distribution and volume based scoring for Isolation Forests, Dhouib et al., 2023]
+File: ad-papers-pdf/scoring_isolation_forest.pdf (Page 2)
+Content: points are more evenly distributed than under the logarithmic
+scaling of ϕIF. In terms of the above tuple notation, IF is then
+specified as
+IF ≡(n, AIF, ϕIF, hIF, τ),
+where we leave the specification of n and τ implicit.
+A. Contributions
+In this paper, we contribute two logically independent
+variant...
+
+--- Result 2 (BM25 Score: 17.52) ---
+Source: [K-means-based isolation forest, Karczmarek et al., 2020]
+File: ad-papers-pdf/kmeans_isolation_forest.pdf (Page 14)
+Content: 14
+P. Karczmarek, A. Kiersztyn, W. Pedrycz et al. / Knowledge-Based Systems 195 (2020) 105659
+Table 5
+Computing overhead of the methods.
+Dataset kind
+Number of
+records
+Number of
+attributes
+Isolation
+forest (s)
+k-Means-based
+isolation forest
+(s)
+Artificial set
+30 000
+2
+4.584
+2.524
+Artificial set
+50 0...
+
+--- Result 3 (BM25 Score: 17.00) ---
+Source: [A probabilistic generalization of isolation forest, Tokovarov,, 2022]
+File: ad-papers-pdf/probabilistic_generalization_of_isolation_forest.pdf (Page 16)
+Content: Declaration of Competing Interest
+The authors declare that they have no known competing ﬁnancial interests or personal relationships that could have
+appeared to inﬂuence the work reported in this paper.
+Acknowledgements
+Funded by the National Science Centre, Poland under CHIST-ERA programme (Grant n...
+
+
+
+Classical search for: 'What is the best recipe for pizza?'
+Query tokens: ['best', 'recipe', 'pizza']
+--- Result 1 (BM25 Score: 3.85) ---
+Source: [Distribution and volume based scoring for Isolation Forests, Dhouib et al., 2023]
+File: ad-papers-pdf/scoring_isolation_forest.pdf (Page 7)
+Content: TABLE I: Detailed results for the AUCROC for SOTA algorithms and IF variants on selected datasets. The highest AUCROC
+is highlighted in bold. The best value of α and best SOTA algorithm are given in parentheses behind the AUCROC value.
+Dataset
+best IFα
+best PACα
+best SOTA
+annthyroid
+82.12 (0)
+91.47 ...
+
+--- Result 2 (BM25 Score: 3.33) ---
+Source: [A probabilistic generalization of isolation forest, Tokovarov,, 2022]
+File: ad-papers-pdf/probabilistic_generalization_of_isolation_forest.pdf (Page 14)
+Content: Table 4
+Comparison of results obtained by selected outlier detection methods, original Isolation Forest, and the proposed modiﬁcation. The last column contains the
+notes showing which setup of the proposed method allowed achieving the highest result. The best results in the rows are bold. If two or ...
+
+--- Result 3 (BM25 Score: 3.23) ---
+Source: [Functional Isolation Forest, Staerman, 2019]
+File: ad-papers-pdf/functional_isolation_forest.pdf (Page 13)
+Content: Functional Isolation Forest
+(OCSVM) (Sch¨olkopf et al., 2001)— are employed after dimension reduction by Functional
+PCA keeping 20 principal components with largest eigenvalues after a preliminary step of
+ﬁltering using Haar basis. The depths are the random projection halfspace depth (Cuevas
+et al.,...
+
+
+
+Classical search for: 'Who won the FIFA World Cup in 2022?'
+Query tokens: ['fifa', 'world', 'cup', '2022']
+--- Result 1 (BM25 Score: 3.96) ---
+Source: [Extended Isolation Forest, Hariri et al., 2021]
+File: ad-papers-pdf/extended_isolation_forest.pdf (Page 9)
+Content: observe a similar trend as before where the mean is con-
+verging to a steady score value, but much more slowly,
+making it less sensitive to choosing threshold values.
+Fig. 16c shows the variance of the scores obtained. We
+notice that, as before, the variance is much higher for the
+standard Isolation...
+
+--- Result 2 (BM25 Score: 3.02) ---
+Source: [A probabilistic generalization of isolation forest, Tokovarov,, 2022]
+File: ad-papers-pdf/probabilistic_generalization_of_isolation_forest.pdf (Page 16)
+Content: Declaration of Competing Interest
+The authors declare that they have no known competing ﬁnancial interests or personal relationships that could have
+appeared to inﬂuence the work reported in this paper.
+Acknowledgements
+Funded by the National Science Centre, Poland under CHIST-ERA programme (Grant n...
+
+--- Result 3 (BM25 Score: 2.79) ---
+Source: [Extended Isolation Forest, Hariri et al., 2021]
+File: ad-papers-pdf/extended_isolation_forest.pdf (Page 10)
+Content: described before. Fig. 19 shows the convergence plots for the
+standard, rotated and Extended Isolation forest.
+Figs. 20 and 21 show the same plots for the 3-D blob and
+4-D blobs respectively, except for the Rotated Isolation For-
+est case.
+For the convergence plots, the error bars show the
+variance ...

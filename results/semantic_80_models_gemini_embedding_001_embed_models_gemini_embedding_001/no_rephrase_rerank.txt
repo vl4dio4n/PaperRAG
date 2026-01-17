@@ -1,0 +1,310 @@
+Processing: 'What specific artifact does the standard Isolation Forest produce in anomaly score heat maps that Extended Isolation Forest aims to fix?'
+
+--- Starting pipeline for: 'What specific artifact does the standard Isolation Forest produce in anomaly score heat maps that Extended Isolation Forest aims to fix?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+Based on the provided context, the standard Isolation Forest produces artifacts in anomaly score heat maps due to its branching procedure, which only creates cuts parallel to the coordinate axes [Extended Isolation Forest, Hariri et al., 2021]. This introduces a bias that results in artificial zones of high or low scores not present in the original data [Extended Isolation Forest, Hariri et al., 2021].
+
+These specific artifacts manifest in several ways:
+
+*   **Rectangular Bands:** For a single, circular cluster of data points, the standard Isolation Forest produces an anomaly map with "rectangular regions" or "bands" extending horizontally and vertically from the data's center. This creates a cross-like artifact instead of the expected circular score map [Extended Isolation Forest, Hariri et al., 2021; Generalized isolation forest for anomaly detection, Lesouple et al., 2021]. For more structured data, such as a sinusoidal distribution, the algorithm incorrectly treats it as "one large rectangular blob with horizontal and vertical bands" [Extended Isolation Forest, Hariri et al., 2021].
+*   **"Ghost" Clusters:** When there are multiple data clusters, the rectangular bands emanate from each cluster's center. The intersection of these bands creates artificial low-score regions referred to as "ghost clusters" [Extended Isolation Forest, Hariri et al., 2021]. These ghost clusters are problematic because they wrongly indicate a non-existent structure in the data and can cause an anomalous point falling in that region to be misclassified as nominal [Extended Isolation Forest, Hariri et al., 2021].
+
+Extended Isolation Forest (EIF) aims to fix this by allowing its branching hyperplanes to take on any slope, not just those parallel to the coordinate axes. This extension "completely resolves the bias" and eliminates the rectangular bands and "ghost" regions, resulting in score maps that better preserve the true structure of the data [Extended Isolation Forest, Hariri et al., 2021].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'How does Extended Isolation Forest fix the bias issues found in the standard algorithm?'
+
+--- Starting pipeline for: 'How does Extended Isolation Forest fix the bias issues found in the standard algorithm?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+Based on the provided context, the standard Isolation Forest algorithm suffers from a bias because its branching procedure slices data using only axis-parallel cuts, which are always horizontal or vertical [Extended Isolation Forest, Hariri et al., 2021]. This introduces artificial zones of high or low anomaly scores depending on the data point's location relative to the coordinate frame [Extended Isolation Forest, Hariri et al., 2021].
+
+To fix this issue, the authors proposed two approaches, with the Extended Isolation Forest (EIF) being the preferred and more robust method [Extended Isolation Forest, Hariri et al., 2021]. The EIF algorithm remedies the bias by modifying and generalizing the branching process. Instead of being restricted to axis-parallel cuts, EIF allows the slicing hyperplanes to have random slopes [Extended Isolation Forest, Hariri et al., 2021]. This is achieved at each branching node by selecting a random normal vector and a random intercept point to define the data split [Extended Isolation Forest, Hariri et al., 2021]. This extension completely resolves the bias introduced by the standard Isolation Forest, leading to more robust anomaly scores with significantly smaller variance [Extended Isolation Forest, Hariri et al., 2021].
+
+The standard Isolation Forest is considered a special case of EIF, corresponding to an "extension level" of zero where the hyperplanes are parallel to the axes [Extended Isolation Forest, Hariri et al., 2021].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'How does Functional Isolation Forest (FIF) project data using a dictionary and scalar products?'
+
+--- Starting pipeline for: 'How does Functional Isolation Forest (FIF) project data using a dictionary and scalar products?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+In the Functional Isolation Forest (FIF) algorithm, data is projected onto elements of a chosen dictionary `D` to create features that describe the data [Functional Isolation Forest, Staerman, 2019]. This projection of a function `x` onto a dictionary element `d` is defined by their scalar product, `(x, d)_H`. This result is a feature, or "Split variable," that partially describes the function `x` [Functional Isolation Forest, Staerman, 2019]. A collection of these Split variables, generated by using the entire dictionary, creates a rich representation of the functional data [Functional Isolation Forest, Staerman, 2019].
+
+The choice of the scalar product provides flexibility, allowing the algorithm to detect different kinds of anomalies [Functional Isolation Forest, Staerman, 2019]. For example:
+*   An `L_2` scalar product allows for the detection of "location anomalies" [Functional Isolation Forest, Staerman, 2019].
+*   An `L_2` scalar product of the derivatives can detect "shape anomalies" [Functional Isolation Forest, Staerman, 2019].
+*   A combined scalar product can be used as a compromise to detect both location and shape anomalies simultaneously [Functional Isolation Forest, Staerman, 2019].
+
+For multivariate functional data, where an observation consists of `d` functions, the projection is extended by using the coordinate-wise sum of the corresponding scalar products. The formula for this projection is `(f, g)_{H^⊗d} := ∑_{i=1}^d (f⁽ⁱ⁾, g⁽ⁱ⁾)_H` [Functional Isolation Forest, Staerman, 2019].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'Why are anomalies assumed to be more susceptible to isolation in the kernel space according to the Kernel Isolation Forest paper?'
+
+--- Starting pipeline for: 'Why are anomalies assumed to be more susceptible to isolation in the kernel space according to the Kernel Isolation Forest paper?' ---
+Retrieved 18 raw chunks.
+Reranked: Kept 9/18 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+Based on the provided context, the fundamental assumption of the Isolation Forest (iForest) algorithm is that anomalies are "few and different" or "rare and different" from normal instances [A probabilistic generalization of isolation forest, Tokovarov,, 2022; Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019]. This characteristic makes them more susceptible to isolation within binary tree structures [Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019]. Anomalies are expected to be in sparsely populated regions of the feature space, far from inliers, and therefore require fewer random partitions to be isolated, resulting in shorter average path lengths in the decision trees [A probabilistic generalization of isolation forest, Tokovarov,, 2022; Generalized isolation forest for anomaly detection, Lesouple et al., 2021; Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019].
+
+The Kernel Isolation Forest paper applies this same principle after first mapping the data into a new feature space using a kernel method. Kernel methods project data into a higher-dimensional space where classes may become more linearly separable [Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019]. The paper proposes a procedure where hyperspectral data is first transformed into this kernel space, and then iForest is used to detect the anomalies [Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019]. While the text states that this preprocessing step plays an "important role in further improving the detection performance," it does not explicitly detail why anomalies are assumed to be more susceptible to isolation *specifically in the kernel space* beyond the general principle of the iForest algorithm itself [Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'How does Generalized Isolation Forest (GIF) improve upon Extended Isolation Forest regarding empty branches?'
+
+--- Starting pipeline for: 'How does Generalized Isolation Forest (GIF) improve upon Extended Isolation Forest regarding empty branches?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+Generalized Isolation Forest (GIF) improves upon Extended Isolation Forest (EIF) by employing a different strategy for creating splitting hyperplanes that guarantees no empty branches are created in the isolation trees [Generalized isolation forest for anomaly detection, Lesouple et al., 2021].
+
+A significant drawback of EIF is that its method of selecting a random hyperplane can result in splits where all data points fall on one side, leaving the other branch empty [Generalized isolation forest for anomaly detection, Lesouple et al., 2021; Extended K-Means Isolation Forest, Vlad Birsan, 2025]. These empty branches occur when EIF samples an intercept point that falls outside the convex hull of the data but inside the axis-bounding hypercube [Generalized isolation forest for anomaly detection, Lesouple et al., 2021]. The probability of generating empty branches increases with the number of dimensions and adds computational overhead and complexity to the trees [Generalized isolation forest for anomaly detection, Lesouple et al., 2021; Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+
+To solve this, GIF modifies the splitting process. The steps are as follows:
+1.  A random normal unit vector is sampled [Generalized isolation forest for anomaly detection, Lesouple et al., 2021; Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+2.  All data points are projected onto this vector [Generalized isolation forest for anomaly detection, Lesouple et al., 2021; Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+3.  Instead of sampling an intercept from a large volume, GIF finds the minimum and maximum values among these projections [Generalized isolation forest for anomaly detection, Lesouple et al., 2021].
+4.  A split value is then sampled uniformly *only* between these minimum and maximum projection values [Generalized isolation forest for anomaly detection, Lesouple et al., 2021; Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+
+This strategy ensures that the separating hyperplane always passes through the convex hull of the data, which guarantees that the data points are partitioned into two non-empty subsets [Extended K-Means Isolation Forest, Vlad Birsan, 2025]. By eliminating empty branches, GIF significantly improves execution times compared to EIF while achieving similar performance [Generalized isolation forest for anomaly detection, Lesouple et al., 2021].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'How does the K-Means Isolation Forest algorithm combine the partition strategy with the K-Means clustering algorithm?'
+
+--- Starting pipeline for: 'How does the K-Means Isolation Forest algorithm combine the partition strategy with the K-Means clustering algorithm?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+The K-Means Isolation Forest (K-Means IF) algorithm combines a partitioning strategy with K-Means clustering by using the clustering algorithm to define the branches at each node of an isolation tree, creating a density-aware, multi-branch structure [Vlad Birsan, 2025; Karczmarek et al., 2020].
+
+The process at each node is as follows:
+1.  **Random Projection**: First, the algorithm randomly selects a single component (or dimension) [Vlad Birsan, 2025].
+2.  **K-Means Clustering**: All data points at the current node are projected onto this selected component. The K-Means clustering algorithm is then applied to this projected data to identify partition boundaries. The optimal number of clusters, `k`, is determined using the "elbow rule" [Vlad Birsan, 2025].
+3.  **Branch Creation**: The node is then split into `k` child nodes, one for each cluster identified by the K-Means algorithm. This contrasts with the standard Isolation Forest, which only creates two branches [Vlad Birsan, 2025; Karczmarek et al., 2020]. Data points are assigned to the child node corresponding to the cluster they most likely belong to, based on their distance to the cluster's centroid [Vlad Birsan, 2025].
+
+This approach allows the tree structure to adapt to the local density of the data, creating partitions that align with natural clusters rather than using purely random splits [Vlad Birsan, 2025; Karczmarek et al., 2020]. The resulting trees are "wider" but not as deep as those in the standard Isolation Forest [Karczmarek et al., 2020]. This method is considered a hybrid of isolation and density-based anomaly detection, providing "geometrically faithful isolation boundaries" [Vlad Birsan, 2025].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'What are the two hybrid algorithms introduced in the Extended K-Means Isolation Forest paper?'
+
+--- Starting pipeline for: 'What are the two hybrid algorithms introduced in the Extended K-Means Isolation Forest paper?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+Based on the provided context, the two novel hybrid algorithms introduced in the paper are **Subspace K-Means Isolation Forest** and **Extended K-Means Isolation Forest (EKM-IF)** [Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+
+These algorithms are described as follows:
+
+1.  **Subspace K-Means Isolation Forest**: This method combines random subspace selection with the clustering-based partitioning of K-Means IF. At each tree node, it first selects a random number of components (between 1 and the total number of dimensions) and projects the data into the axis-parallel subspace defined by these components before applying clustering [Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+
+2.  **Extended K-Means Isolation Forest (EKM-IF)**: This algorithm projects data onto random oblique hyperplanes before the clustering step. Instead of projecting onto a single axis or an axis-parallel subspace, it projects the data into a general subspace using a random normal projection matrix. This approach combines the "geometric flexibility of EIF with the density adaptability of K-Means IF" [Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'How does the Probabilistic Generalization of Isolation Forest (PGIF) use segment-cumulated probability?'
+
+--- Starting pipeline for: 'How does the Probabilistic Generalization of Isolation Forest (PGIF) use segment-cumulated probability?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+The Probabilistic Generalization of Isolation Forest (PGIF) uses segment-cumulated probability to make the process of splitting data more effective for anomaly detection [A probabilistic generalization of isolation forest, Tokovarov, 2022]. The method is based on the assumption that outliers are located in the relatively wide gaps that separate dense clusters of normal data points [A probabilistic generalization of isolation forest, Tokovarov, 2022].
+
+Unlike the original Isolation Forest, which uses a uniform distribution where the probability of a split is proportional to a segment's length, PGIF introduces a non-linear approach. It constructs a piecewise defined probability density function where the probability cumulated on a segment is proportional to the segment's length raised to the k-th power [A probabilistic generalization of isolation forest, Tokovarov, 2022].
+
+This generalization assigns a lower probability density to densely populated regions (clusters) and a higher probability density to the out-of-cluster regions or gaps [A probabilistic generalization of isolation forest, Tokovarov, 2022]. By giving a higher probability weight to the gaps between clusters, splits are more likely to occur there. This is considered more "profitable" as it allows outliers to be isolated earlier in the tree-building process, leading to a higher anomaly score [A probabilistic generalization of isolation forest, Tokovarov, 2022]. In essence, PGIF builds an empirical probability distribution from the training data to ensure more meaningful splits that occur between clusters rather than through them [A probabilistic generalization of isolation forest, Tokovarov, 2022].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'How does the Rényi divergence relate to the aggregation functions in distribution-based scoring for Isolation Forests?'
+
+--- Starting pipeline for: 'How does the Rényi divergence relate to the aggregation functions in distribution-based scoring for Isolation Forests?' ---
+Retrieved 18 raw chunks.
+Reranked: Kept 10/18 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+Based on the provided context, the Rényi divergence relates to the aggregation functions through an intermediate set of functions, denoted as `f_α` [Distribution and volume based scoring for Isolation Forests, Dhouib et al., 2023].
+
+The relationship is established in a few steps:
+1.  The paper introduces a family of aggregation functions `h_α`, which are defined in terms of `f_α` as: `h_α(x) = 2^(−f_α(x))` [Distribution and volume based scoring for Isolation Forests, Dhouib et al., 2023].
+2.  The functions `f_α` are directly linked to the α-Rényi divergence, `R_α`, via the identity: `f_α(x) = exp(-R_α(x/||x||_1 || 1/n))`, where **1** represents a vector of ones [Distribution and volume based scoring for Isolation Forests, Dhouib et al., 2023].
+3.  The purpose of this connection to information theory is to demonstrate the properties of the `f_α` and `h_α` functions. The authors state that the claimed properties of `f_α` are a "direct consequence of the properties of the Renyi divergences" [Distribution and volume based scoring for Isolation Forests, Dhouib et al., 2023]. This connection is used to show that the aggregation functions `h_α` are monotonically increasing in the parameter α [Distribution and volume based scoring for Isolation Forests, Dhouib et al., 2023].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'According to the 'Revisiting randomized choices' paper, how does non-uniform random splitting affect the detection of clustered outliers?'
+
+--- Starting pipeline for: 'According to the 'Revisiting randomized choices' paper, how does non-uniform random splitting affect the detection of clustered outliers?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+According to the paper, applying a non-uniformly-random choice of variables and/or thresholds can help to more easily identify "clustered" diverse outliers [Revisiting randomized choices in isolation forests, Cortes et al., 2021].
+
+These clustered outliers, which can originate from repeated processes like fraudulent activity, are often considered the most interesting but also the hardest to detect [Revisiting randomized choices in isolation forests, Cortes et al., 2021]. The paper finds that in multimodal datasets containing this type of outlier, tree-based models perform better, with non-uniformly-random splits providing an "edge" in identification [Revisiting randomized choices in isolation forests, Cortes et al., 2021].
+
+The proposed guiding heuristic in the paper, which is a form of non-uniform split selection, offered increased performance for these clustered outliers. However, this improvement came at the expense of degraded performance for other types of outliers [Revisiting randomized choices in isolation forests, Cortes et al., 2021].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'What is the specific application domain (type of images) that the Kernel Isolation Forest is designed to analyze?'
+
+--- Starting pipeline for: 'What is the specific application domain (type of images) that the Kernel Isolation Forest is designed to analyze?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 7/20 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+Based on the provided context, the Kernel Isolation Forest (KIF) method is designed to analyze **hyperspectral images (HSIs)** for the purpose of **anomaly detection** [Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019].
+
+Hyperspectral images are described as remotely sensed images that contain hundreds or even thousands of spectral bands. The goal of hyperspectral anomaly detection is to identify targets that are spectrally or spatially very different from their surrounding background, without any prior knowledge of the target or background signatures [Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019]. The method was evaluated on real-world hyperspectral data sets, such as one captured by the Airborne Visible/Infrared Imaging Spectrometer (AVIRIS) covering the San Diego airport area [Hyperspectral anomaly detection with kernel isolation forest, Li et al., 2019].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'Which benchmark metrics were used to evaluate the Extended K-Means Isolation Forest on the 13 datasets?'
+
+--- Starting pipeline for: 'Which benchmark metrics were used to evaluate the Extended K-Means Isolation Forest on the 13 datasets?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+Based on the provided context, the performance metrics used to evaluate the Extended K-Means Isolation Forest and other algorithms on the 13 benchmark datasets were ROC-AUC, PR-AUC, and training time [Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+
+These metrics were visualized in a series of comparative analyses:
+*   **ROC-AUC** performance was compared in Figure 2 [Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+*   **PR-AUC** performance was compared in Figure 3 [Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+*   **Training time** was compared in Figure 4 [Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'What is the 'visual elbow rule' used for in the context of Functional Isolation Forest experiments?'
+
+--- Starting pipeline for: 'What is the 'visual elbow rule' used for in the context of Functional Isolation Forest experiments?' ---
+Retrieved 19 raw chunks.
+Reranked: Kept 8/19 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+Based on the provided context, the 'visual elbow rule' is used in Functional Isolation Forest (FIF) experiments to define a threshold for anomaly detection [Functional Isolation Forest, Staerman, 2019].
+
+This is visualized in a scatter plot of sorted anomaly scores, which shows a clear "elbow" that separates the high-scoring anomalies from the low-scoring normal data. A threshold is then set at this elbow point to distinguish between the two groups [Functional Isolation Forest, Staerman, 2019].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'What is the main advantage of Generalized Isolation Forest (GIF) over Extended Isolation Forest (EIF) in terms of computation time?'
+
+--- Starting pipeline for: 'What is the main advantage of Generalized Isolation Forest (GIF) over Extended Isolation Forest (EIF) in terms of computation time?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 9/20 chunks.
+Evaluation Status: ANSWERABLE
+Generating answer...
+Response:
+Based on the provided context, the main advantage of Generalized Isolation Forest (GIF) over Extended Isolation Forest (EIF) is its significantly improved computational performance and faster execution time [Generalized isolation forest for anomaly detection, Lesouple et al., 2021].
+
+This speed advantage stems from how each algorithm constructs its decision trees. The EIF algorithm's strategy for selecting random hyperplanes can generate empty branches, which increases the complexity of the trees and adds computational overhead [Extended K-Means Isolation Forest, Vlad Birsan, 2025; Generalized isolation forest for anomaly detection, Lesouple et al., 2021]. As tree depth increases, the probability of creating these inefficient empty branches rises [Extended K-Means Isolation Forest, Vlad Birsan, 2025].
+
+GIF was designed specifically to overcome this issue. It modifies the selection of the separation hyperplane to ensure it always passes through the convex hull of the data. This guarantees that the data points are always partitioned into two non-empty subsets, thus eliminating the creation of empty branches [Extended K-Means Isolation Forest, Vlad Birsan, 2025; Generalized isolation forest for anomaly detection, Lesouple et al., 2021]. By avoiding this drawback of EIF, GIF achieves significantly reduced execution times for creating the forest [Generalized isolation forest for anomaly detection, Lesouple et al., 2021].
+
+However, one source notes that this speed advantage can be dependent on the specific software implementation. While one analysis reported GIF running an order of magnitude faster than EIF, a separate study using a reimplemented, speed-focused version of EIF found the opposite, with their EIF being an order of magnitude faster than GIF [Revisiting randomized choices in isolation forests, Cortes et al., 2021].
+Expected Label: ANSWERABLE
+------------------------------------------------------------
+
+Processing: 'How does the performance of Isolation Forest compare to an LSTM-based Autoencoder on time-series data?'
+
+--- Starting pipeline for: 'How does the performance of Isolation Forest compare to an LSTM-based Autoencoder on time-series data?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: NO_DATA
+Response:
+**No Information Found:** The query is relevant as it mentions both Isolation Forest and LSTM Autoencoders as anomaly detection methods, but the provided context does not contain a direct performance comparison between these two specific models on time-series data.
+(I searched the database but couldn't find specific details on this.)
+Expected Label: NO_DATA
+------------------------------------------------------------
+
+Processing: 'What are the specific latency requirements for deploying Isolation Forest on an Arduino or edge device?'
+
+--- Starting pipeline for: 'What are the specific latency requirements for deploying Isolation Forest on an Arduino or edge device?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: NO_DATA
+Response:
+**No Information Found:** The query is relevant, but the provided papers do not discuss this specific detail.
+(I searched the database but couldn't find specific details on this.)
+Expected Label: NO_DATA
+------------------------------------------------------------
+
+Processing: 'How can I implement the Isolation Forest algorithm using the H2O.ai library in R?'
+
+--- Starting pipeline for: 'How can I implement the Isolation Forest algorithm using the H2O.ai library in R?' ---
+Retrieved 20 raw chunks.
+Reranked: Kept 10/20 chunks.
+Evaluation Status: NO_DATA
+Response:
+**No Information Found:** The query is relevant, but the provided papers do not discuss this specific detail.
+(I searched the database but couldn't find specific details on this.)
+Expected Label: NO_DATA
+------------------------------------------------------------
+
+Processing: 'Does the 'Deep Isolation Forest' variant use Convolutional Neural Networks for feature extraction?'
+
+--- Starting pipeline for: 'Does the 'Deep Isolation Forest' variant use Convolutional Neural Networks for feature extraction?' ---
+Retrieved 17 raw chunks.
+Reranked: Kept 1/17 chunks.
+Evaluation Status: NO_DATA
+Response:
+**No Information Found:** The query is relevant, but the provided papers do not discuss this specific detail.
+(I searched the database but couldn't find specific details on this.)
+Expected Label: NO_DATA
+------------------------------------------------------------
+
+Processing: 'What is the best recipe for pizza?'
+
+--- Starting pipeline for: 'What is the best recipe for pizza?' ---
+Retrieved 20 raw chunks.
+Reranking failed ('NoneType' object has no attribute 'strip'), returning original top 10.
+Evaluation Status: UNRELATED
+Response:
+**Query Rejected:** The user is asking about cooking/recipes which is outside the scope of this research assistant.
+(I only answer questions about the provided research papers.)
+Expected Label: UNRELATED
+------------------------------------------------------------
+
+Processing: 'Who won the FIFA World Cup in 2022?'
+
+--- Starting pipeline for: 'Who won the FIFA World Cup in 2022?' ---
+Retrieved 18 raw chunks.
+Reranked: Kept 0/18 chunks.
+Evaluation Status: UNRELATED
+Response:
+**Query Rejected:** The user is asking about the FIFA World Cup which is outside the scope of this research assistant.
+(I only answer questions about the provided research papers.)
+Expected Label: UNRELATED
+------------------------------------------------------------
